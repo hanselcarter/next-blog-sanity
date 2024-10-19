@@ -1,5 +1,5 @@
 import { splitSentence } from "@/app/lib/strings";
-import Logo from "../../../public/assets/footerLogo.svg";
+import Logo from "../../public/assets/footerLogo.svg";
 import Image from "next/image";
 
 const socialMedia = ["Twitter", "LinkedIn", "Rss"];
@@ -9,7 +9,7 @@ const sentence =
 function Footer() {
   const splitSentenceArray = splitSentence(sentence);
   return (
-    <footer className="h-[464px] w-full bg-black flex flex-col fixed bottom-0">
+    <footer className="h-[464px] w-full bg-black flex flex-col ">
       <div className=" flex gap-[13px] text-white mt-[18px]">
         {splitSentenceArray.map((word, index) => (
           <p
