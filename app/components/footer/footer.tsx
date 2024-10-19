@@ -33,7 +33,7 @@ function Footer() {
           {socialMedia.map((media, index) => (
             <p
               key={index}
-              className="text-[#FFF] font-sf-pro-text text-[16px] font-medium leading-[27.2px] underline"
+              className="text-[#FFF] font-sf-pro-text text-[16px] font-medium leading-[27.2px] underline cursor-pointer"
             >
               {media}
             </p>
