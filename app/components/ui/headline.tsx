@@ -1,4 +1,4 @@
-import Divider from "./divider";
+import Divider from "./dividers/divider";
 
 interface HeadlineProps {
   title: string;

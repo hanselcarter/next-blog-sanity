@@ -1,4 +1,4 @@
-import Divider from "@/app/components/ui/divider";
+import Divider from "@/app/components/ui/dividers/divider";
 import { urlFor } from "@/app/lib/sanity/sanity";
 import { Blog } from "@/app/models/blog";
 import Image from "next/image";

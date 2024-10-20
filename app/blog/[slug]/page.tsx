@@ -3,6 +3,9 @@ import { Blog } from "@/app/models/blog";
 import Image from "next/image";
 import BlogHeader from "./blogHeader";
 import BlogContent from "./blogContent";
+import Divider from "@/app/components/ui/dividers/divider";
+import Eyes from "../../../public/assets/eyes.svg";
+import EyesDivider from "@/app/components/ui/dividers/eyesDivider";
 
 async function getData(slug: string): Promise<Blog> {
   const query = `*[_type=="blog"  && slug.current == '${slug}']{
@@ -41,6 +44,7 @@ async function BlogPage({ params }: { params: { slug: string } }) {
         image={urlFor(blog.image).url() as string}
       />
       <BlogContent blog={blog} />
+      <EyesDivider />
     </div>
   );
 }
