@@ -1,14 +1,15 @@
-import { SanityImageAssetDocument } from "next-sanity";
+import { PortableTextBlock, SanityImageAssetDocument } from "next-sanity";
 
 export interface Blog {
   title: string;
-  subTitle: string;
   slug: string;
   image: SanityImageAssetDocument;
   description: string;
-  content: unknown;
+  content: PortableTextBlock;
   publishedAt: string;
   author: string;
   authorHeadline: string;
   tags: string;
+  authorImage: SanityImageAssetDocument;
+  minsToRead: string;
 }

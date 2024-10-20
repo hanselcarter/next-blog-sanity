@@ -14,12 +14,15 @@ async function getData(): Promise<Blog[]> {
   description,
   publishedAt,
   author,
-  authorHeadline
+  authorHeadline,
+  authorImage,
+  minsToRead
 }`;
 
   const data = await client.fetch(query);
   return data;
 }
+export const revalidate = 30;
 
 export default async function Home() {
   const data = await getData();

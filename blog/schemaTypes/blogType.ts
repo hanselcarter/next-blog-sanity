@@ -11,11 +11,6 @@ export const blogType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'subTitle',
-      title: 'SubTitle',
-      type: 'string',
-    }),
-    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -39,7 +34,11 @@ export const blogType = defineType({
       type: 'array',
       of: [{type: 'block'}],
     }),
-
+    defineField({
+      name: 'minsToRead',
+      title: 'MinsToRead',
+      type: 'string',
+    }),
     defineField({
       name: 'publishedAt',
       title: 'PublishedAt',
@@ -49,6 +48,11 @@ export const blogType = defineType({
       name: 'author',
       title: 'Author',
       type: 'string',
+    }),
+    defineField({
+      name: 'authorImage',
+      title: 'AuthorImage',
+      type: 'image',
     }),
     defineField({
       name: 'authorHeadline',

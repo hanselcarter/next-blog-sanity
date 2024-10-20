@@ -12,8 +12,15 @@ function BlogHeader({ subtitle, image, title }: BlogHeaderProps) {
   return (
     <>
       <Headline title={title} subtitle={subtitle} />
-      <div>
-        <Image src={image} alt="home" className="w-full h-[533px]" />
+      <div className="w-full">
+        <Image
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+          src={image}
+          alt="home"
+        />
       </div>
     </>
   );
