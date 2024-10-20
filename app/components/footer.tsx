@@ -1,8 +1,17 @@
 import { splitSentence } from "@/app/lib/strings";
 import Logo from "../../public/assets/footerLogo.svg";
 import Image from "next/image";
+import Link from "next/link";
 
-const socialMedia = ["Twitter", "LinkedIn", "Rss"];
+interface SocialLink {
+  href: string;
+  text: string;
+}
+const socialMedia: SocialLink[] = [
+  { href: "https://x.com/home?lang=en", text: "Twitter" },
+  { text: "LinkedIn", href: "https://www.linkedin.com/" },
+  { text: "Rss", href: "https://rss.com/" },
+];
 //Sentece to split and display in the footer, I wrote a split function in roder to split once I find the one that start on upper case to represent based on figma design
 const sentence =
   "Digital product Design Remote work UX design Distributed teams Creativity Creativity Growth Digital product Design Remote work UX design Distributed teams Creativity Creativity Growth";
@@ -31,12 +40,15 @@ function Footer() {
         </p>
         <div className="flex gap-[27px] mt-4">
           {socialMedia.map((media, index) => (
-            <p
+            <Link
+              href={media.href}
               key={index}
               className="text-[#FFF] font-sf-pro-text text-[16px] font-medium leading-[27.2px] underline cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {media}
-            </p>
+              {media.text}
+            </Link>
           ))}
         </div>
         <p className="w-[178px] text-[#FFF] text-center font-sf-pro-text text-[12px] font-normal  leading-[16.8px] mt-6">

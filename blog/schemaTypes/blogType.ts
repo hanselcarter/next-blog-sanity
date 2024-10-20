@@ -11,6 +11,11 @@ export const blogType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'subTitle',
+      title: 'SubTitle',
+      type: 'string',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -48,6 +53,11 @@ export const blogType = defineType({
     defineField({
       name: 'authorHeadline',
       title: 'AuthorHeadline',
+      type: 'string',
+    }),
+    defineField({
+      name: 'tags',
+      title: 'Tags',
       type: 'string',
     }),
   ],

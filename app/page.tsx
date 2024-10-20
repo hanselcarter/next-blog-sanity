@@ -5,6 +5,7 @@ import { Blog } from "./models/blog";
 import Image from "next/image";
 import HomeImg from "../public/assets/homeImg.svg";
 import Article from "./components/article";
+
 async function getData(): Promise<Blog[]> {
   const query = `*[_type=="blog"]| order(_createdAt desc){
   title,
@@ -22,7 +23,7 @@ async function getData(): Promise<Blog[]> {
 
 export default async function Home() {
   const data = await getData();
-  console.log(data[0].author, "j");
+  console.log(data, "j");
   return (
     <div className="flex flex-col items-center py-[77px]">
       <HomeHeadline />

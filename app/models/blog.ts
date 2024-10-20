@@ -2,6 +2,7 @@ import { SanityImageAssetDocument } from "next-sanity";
 
 export interface Blog {
   title: string;
+  subTitle: string;
   slug: string;
   image: SanityImageAssetDocument;
   description: string;
@@ -9,4 +10,5 @@ export interface Blog {
   publishedAt: string;
   author: string;
   authorHeadline: string;
+  tags: string;
 }
