@@ -1,7 +1,7 @@
 import { urlFor } from "./lib/sanity/sanity";
 import HomeHeadline from "./components/homeHeadline";
 import Article from "./components/article";
-import { getBlogs } from "./lib/sanity/api";
+import { getBlogs } from "./lib/sanity/sanityFetch";
 
 export const revalidate = 120;
 

@@ -4,7 +4,7 @@ import { Blog } from "@/app/models/blog";
 import Image from "next/image";
 import Twitter from "../../../public/assets/twitter.svg";
 import Facebook from "../../../public/assets/facebook.svg";
-import { PortableText, PortableTextBlock } from "next-sanity";
+import { PortableText } from "next-sanity";
 
 interface BlogContentProps {
   blog: Blog;

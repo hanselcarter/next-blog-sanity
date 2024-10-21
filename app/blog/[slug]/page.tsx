@@ -1,9 +1,9 @@
 import { urlFor } from "@/app/lib/sanity/sanity";
-import BlogHeader from "./blogHeader";
-import BlogContent from "./blogContent";
+import BlogHeader from "../blogHeader";
+import BlogContent from "../blogContent";
 import EyesDivider from "@/app/components/ui/dividers/eyesDivider";
-import { getBlogBySlug, getLatestTenBlogs } from "@/app/lib/sanity/api";
-import WhatsNext from "./whatsNext";
+import { getBlogBySlug, getLatestTenBlogs } from "@/app/lib/sanity/sanityFetch";
+import WhatsNext from "../whatsNext";
 import SignUp from "@/app/components/signUp";
 
 export const revalidate = 120;
