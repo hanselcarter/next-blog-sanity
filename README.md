@@ -47,6 +47,17 @@ Blog page with a home where I show a home headline and all the fetched blogs fro
 ## Some considerations
 
 There is no need to create blogs from scratch set of documents is already created
-and deployed, in case you want to run the sanity studio under de root just go to
-cd blog yarn install and yarn run dev and open [http://localhost:3333/](http://localhost:3333/) you will see sanity studio for this you need at least node 20
-Out of simplicity no need env variables since I am running a sanity trial
+and deployed, in case you want to run the sanity studio under de root just go to your terminal on the root and run:
+
+```bash
+cd blog yarn install
+```
+
+Then
+
+```bash
+yarn run dev
+```
+
+open [http://localhost:3333/](http://localhost:3333/) you will see sanity studio for this you need at least node 20
+Out of simplicity there is no need env variables since I am running a sanity trial
