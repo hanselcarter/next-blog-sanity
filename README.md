@@ -4,7 +4,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Make sure you have at least node 18 installed, if not use nvm [https://github.com/nvm-sh/nvm?tab=readme-ov-file#about](https://github.com/nvm-sh/nvm?tab=readme-ov-file#about)
 
-First, add dependencies yarn install
+First, add dependencies
+
+```bash
+ yarn install
+```
 
 Then, run the development server:
 
