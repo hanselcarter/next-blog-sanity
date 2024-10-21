@@ -3,14 +3,15 @@ import React from "react";
 interface DividerProps {
   fullWidth?: boolean;
   customHeight?: string;
+  color?: string;
 }
 
-function Divider({ fullWidth, customHeight }: DividerProps) {
+function Divider({ fullWidth, customHeight, color }: DividerProps) {
   return (
     <div
       className={`${fullWidth ? "w-full" : "w-[640px]"} ${
         customHeight ? customHeight : "h-[2px]"
-      } bg-black`}
+      } ${color ? color : "bg-black"}`}
     ></div>
   );
 }

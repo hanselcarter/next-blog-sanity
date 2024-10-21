@@ -66,7 +66,7 @@ function BlogContent({ blog }: BlogContentProps) {
           {blog.tags}
         </p>
       </div>
-      <Divider fullWidth customHeight="h-[1px]" />
+      <Divider fullWidth customHeight="h-[1px]" color="bg-[#cfcfcf]" />
       <div className="flex gap-[24px] w-full">
         <Image
           className="rounded-full"

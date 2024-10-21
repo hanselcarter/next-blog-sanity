@@ -15,7 +15,7 @@ function Article({ img, alt, description, slug }: ArticleProps) {
       className=" flex  flex-col gap-[20px] items-center"
     >
       <Image src={img} width={304} height={176} alt={alt} />
-      <p className="w-[262px] text-black text-center font-sf-pro-display text-[22px] font-medium leading-[120%] line-clamp-3">
+      <p className="w-[262px] text-black text-center font-sf-pro-display text-[22px] font-medium leading-[120%] line-clamp-4">
         {description}
       </p>
     </Link>
