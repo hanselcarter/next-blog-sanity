@@ -14,7 +14,7 @@ yarn run dev
 
 This should open app on [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Getting Started to run app with docker do an exact copy and paste on your terminal on the root
+## Getting Started to run app with Dockerization do an exact copy and paste on your terminal on the root
 
 copy this command and paste it in your terminal DO NOT FORGET "."" at last:
 
@@ -36,7 +36,7 @@ Just go to [next-blog](https://next-blog-tau-lemon.vercel.app/blog/a-few-words-a
 
 ## About the app
 
-Blog page with a home where I show a home headline and all the fetched blogs from SANITY, shown blogs are clickable so this get routed to individual blog page this page fetches the article details by slug and also I show latest articles out of simplicity with no filters, app is responsive and made with tailwind
+Blog page with a home where I show a home headline and all the fetched blogs from SANITY, shown blogs are clickable so this get routed to individual blog page this page fetches the article details by slug and also I show latest articles out of simplicity with no filters, app is responsive and made with tailwind also SANITY was the CMS I chose to fetch data and display it
 
 ## Some considerations
 
