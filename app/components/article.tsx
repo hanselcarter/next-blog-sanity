@@ -11,7 +11,7 @@ interface ArticleProps {
 function Article({ img, alt, description, slug }: ArticleProps) {
   return (
     <Link
-      href={`/blog/${slug}`}
+      href={`/blogArticle/${slug}`}
       className=" flex  flex-col gap-[20px] items-center"
     >
       <Image src={img} width={304} height={176} alt={alt} />
