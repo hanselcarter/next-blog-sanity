@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started to run app locally
 
-Make sure you have at least node 18 installed, if not use nvm [https://github.com/nvm-sh/nvm?tab=readme-ov-file#about](https://github.com/nvm-sh/nvm?tab=readme-ov-file#about)
+Make sure you have at least node 18 and yarn installed, if not use nvm [https://github.com/nvm-sh/nvm?tab=readme-ov-file#about](https://github.com/nvm-sh/nvm?tab=readme-ov-file#about)
 
 First, add dependencies
 
@@ -20,7 +20,7 @@ This should open app on [http://localhost:3000](http://localhost:3000) with your
 
 ## Getting Started to run app with Dockerization do an exact copy and paste on your terminal on the root
 
-Make sure you have docket installed
+Make sure you have docker installed
 
 copy this command and paste it in your terminal DO NOT FORGET "." at last
 

@@ -13,7 +13,13 @@ async function BlogPage({ params }: { params: { slug: string } }) {
   const blogs = await getLatestTenBlogs();
 
   if (!blog) {
-    return <p>Blog was not found!</p>;
+    return (
+      <div className="flex items-center justify-center h-[50vh]">
+        <p className="text-2xl font-semibold text-gray-600">
+          Blog was not found!
+        </p>
+      </div>
+    );
   }
 
   return (
