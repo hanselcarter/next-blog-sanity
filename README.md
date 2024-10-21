@@ -38,7 +38,7 @@ if you access [http://localhost:3000](http://localhost:3000) , you will see your
 
 ## Getting Started to run app deployed version on vercel
 
-Just go to [next-blog](https://next-blog-tau-lemon.vercel.app/blog/a-few-words-about-this-blog-platform-ghost-and-how-this-site-was-made-6) and you should see the app running
+Just go to [next-blog](https://next-blog-tau-lemon.vercel.app) and you should see the app running
 
 ## About the app
 
