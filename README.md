@@ -1,36 +1,45 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Getting Started to run app locally
 
-First, run the development server:
+Make sure you have at least node 18 installed, if not use nvm [https://github.com/nvm-sh/nvm?tab=readme-ov-file#about](https://github.com/nvm-sh/nvm?tab=readme-ov-file#about)
+
+First, add dependencies yarn install
+
+Then, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This should open app on [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Getting Started to run app with docker do an exact copy and paste on your terminal on the root
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+copy this command and paste it in your terminal DO NOT FORGET "."" at last:
 
-## Learn More
+```bash
+docker build -t nextjs-blog .
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then run this command and you
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+docker run -p 3000:3000 nextjs-blog
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+if you access [http://localhost:3000](http://localhost:3000) , you will see your working app!
 
-## Deploy on Vercel
+## Getting Started to run app deployed version on vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Just go to [next-blog](https://next-blog-tau-lemon.vercel.app/blog/a-few-words-about-this-blog-platform-ghost-and-how-this-site-was-made-6) and you should see the app running
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## About the app
+
+Blog page with a home where I show a home headline and all the fetched blogs from SANITY, shown blogs are clickable so this get routed to individual blog page this page fetches the article details by slug and also I show latest articles out of simplicity with no filters, app is responsive and made with tailwind
+
+## Some considerations
+
+There is no need to create blogs from scratch set of documents is already created
+and deployed, in case you want to run the sanity studio under de root just go to
+cd blog yarn install and yarn run dev and open [http://localhost:3333/](http://localhost:3333/) you will see sanity studio for this you need at least node 20

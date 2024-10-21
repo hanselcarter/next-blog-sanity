@@ -20,6 +20,23 @@ export async function getBlogBySlug(slug: string): Promise<Blog> {
   return blog;
 }
 
+export async function getLatestTenBlogs(): Promise<Blog[]> {
+  const query = `*[_type=="blog"] | order(_createdAt desc)[0..8]{
+    title,
+    "slug":slug.current,
+    image,
+    description,
+    publishedAt,
+    author,
+    authorHeadline,
+    authorImage,
+    minsToRead
+  }`;
+
+  const blogs = await client.fetch(query);
+  return blogs;
+}
+
 export async function getBlogs(): Promise<Blog[]> {
   const query = `*[_type=="blog"]| order(_createdAt desc){
     title,
