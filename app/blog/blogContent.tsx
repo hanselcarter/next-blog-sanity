@@ -2,8 +2,8 @@ import Divider from "@/app/components/ui/dividers/divider";
 import { urlFor } from "@/app/lib/sanity/sanity";
 import { Blog } from "@/app/models/blog";
 import Image from "next/image";
-import Twitter from "../../../public/assets/twitter.svg";
-import Facebook from "../../../public/assets/facebook.svg";
+import Twitter from "../../public/assets/twitter.svg";
+import Facebook from "../../public/assets/facebook.svg";
 import { PortableText } from "next-sanity";
 
 interface BlogContentProps {
