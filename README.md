@@ -10,7 +10,7 @@ First, add dependencies
  yarn install
 ```
 
-Then, run the development server:
+Then, run the development server :
 
 ```bash
 yarn run dev
@@ -57,4 +57,4 @@ yarn run dev
 ```
 
 open [http://localhost:3333/](http://localhost:3333/) you will see sanity studio for this you need at least node 20
-Out of simplicity there is no need env variables its a TRIAL 
+Out of simplicity there is no need env variables its a TRIAL
